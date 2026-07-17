@@ -98,21 +98,6 @@ tests:
     cluster_profile: openshift-org-aws
     workflow: openshift-e2e-aws
 - always_run: false
-  as: e2e-gcp-operator
-  steps:
-    cluster_profile: openshift-org-gcp
-    test:
-    - as: test
-      cli: latest
-      commands: |
-        make test-e2e JUNITFILE=${ARTIFACT_DIR}/junit_report.xml --warn-undefined-variables
-      from: src
-      resources:
-        requests:
-          cpu: 100m
-      timeout: 4h0m0s
-    workflow: ipi-gcp
-- always_run: false
   as: e2e-gcp-operator-encryption-aescbc
   optional: true
   pipeline_run_if_changed: ^(vendor/github.com/openshift/library-go/pkg/operator/encryption)|^(test/e2e-encryption)|^(test/library/encryption)
@@ -454,7 +439,7 @@ tests:
     cluster_profile: openshift-org-azure
     workflow: openshift-e2e-cert-rotation-short-azure
 - always_run: false
-  as: e2e-gcp-operator-serial-ote
+  as: e2e-gcp-operator-serial
   steps:
     cluster_profile: openshift-org-gcp
     env:

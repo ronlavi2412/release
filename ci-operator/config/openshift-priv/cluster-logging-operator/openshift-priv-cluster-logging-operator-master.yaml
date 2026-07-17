@@ -74,7 +74,7 @@ promotion:
   - additional_images:
       cluster-logging-operator-bundle: cluster-logging-operator-bundle
     disabled: true
-    name: "6.6"
+    name: "6.7"
     namespace: logging
 prowgen:
   private: true
