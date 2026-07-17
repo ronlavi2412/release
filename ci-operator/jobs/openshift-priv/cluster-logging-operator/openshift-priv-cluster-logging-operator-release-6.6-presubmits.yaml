@@ -5,6 +5,7 @@ presubmits:
     branches:
     - ^release-6\.6$
     - ^release-6\.6-
+    cluster: build01
     context: ci/prow/ci-index-cluster-logging-operator-bundle
     decorate: true
     decoration_config:
@@ -70,6 +71,7 @@ presubmits:
     branches:
     - ^release-6\.6$
     - ^release-6\.6-
+    cluster: build01
     context: ci/prow/e2e-target
     decorate: true
     decoration_config:
@@ -168,6 +170,7 @@ presubmits:
     branches:
     - ^release-6\.6$
     - ^release-6\.6-
+    cluster: build01
     context: ci/prow/e2e-using-bundle
     decorate: true
     decoration_config:
@@ -267,6 +270,7 @@ presubmits:
     branches:
     - ^release-6\.6$
     - ^release-6\.6-
+    cluster: build01
     context: ci/prow/functional-target
     decorate: true
     decoration_config:
@@ -365,6 +369,7 @@ presubmits:
     branches:
     - ^release-6\.6$
     - ^release-6\.6-
+    cluster: build01
     context: ci/prow/images
     decorate: true
     decoration_config:
@@ -431,6 +436,7 @@ presubmits:
     branches:
     - ^release-6\.6$
     - ^release-6\.6-
+    cluster: build01
     context: ci/prow/lint
     decorate: true
     decoration_config:
@@ -504,6 +510,7 @@ presubmits:
     branches:
     - ^release-6\.6$
     - ^release-6\.6-
+    cluster: build01
     context: ci/prow/unit
     decorate: true
     decoration_config:
